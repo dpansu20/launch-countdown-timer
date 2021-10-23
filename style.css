@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --grayish-blue: hsl(237, 18%, 59%);
+    --soft-red: hsl(345, 95%, 68%);
+    --dark-desat-blue: hsl(236, 21%, 26%);
+    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-black-blue: hsl(234, 17%, 12%);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Red Hat Text', sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: url("./images/bg-stars.svg"),
+                linear-gradient(hsl(234, 17%, 12%), hsl(266, 21%, 13%), hsl(273, 23%, 18%));
+}
+
+
+.launching {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    color: #f4f2f5;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4em;
+    letter-spacing: 0.34em;
+}
+
+
+.cards {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -70%);
+    -webkit-transform: translate(-50%, -70%);
+    -moz-transform: translate(-50%, -70%);
+    -ms-transform: translate(-50%, -70%);
+    -o-transform: translate(-50%, -70%);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.section {
+    position: relative;
+    margin: 0 17px;
+    text-align: center;
+}
+
+.months {
+    display: none;
+}
+
+.card {
+    position: relative;
+    
+}
+
+.top-card {
+    height: 75px;
+    width: 160px;
+    background: var(--dark-desat-blue);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: radial-gradient(circle at bottom right, transparent 8px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 8px, var(--dark-desat-blue) 0) bottom left;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 0.5px;
+}
+
+.bottom-card {
+    height: 75px;
+    width: 160px;
+    background-color: var(--dark-desat-blue);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: radial-gradient(circle at top right, transparent 8px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 8px, var(--dark-desat-blue) 0) top left;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+    margin-top: 0.5px;
+}
+
+.number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    text-align: center;
+    font-size: 75px;
+    color: var(--soft-red);
+    font-weight: 700;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
+.top-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 75px;
+    width: 160px;
+    background: var(--very-dark-blue);
+    opacity: 0.25;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    background: radial-gradient(circle at bottom right, transparent 8px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 8px, var(--very-dark-blue) 0) bottom left;
+    background-size: 60% 100%;
+    background-repeat: no-repeat;
+}
+
+.card-back {
+    position: absolute;
+    top: 12px;
+    left: 1px;
+    z-index: -10;
+    height: 150px;
+    width: 158px;
+    background-color: var(--very-dark-black-blue);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.card-type {
+    text-align: center;
+    font-size: 14px;
+    color: var(--grayish-blue);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-top: 25px;
+}
+
+
+.social {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: flex;
+}
+
+.social a {
+    margin: 0 15px;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
+
+.social a:hover > svg path {
+    fill: var(--soft-red);
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+
+.hills {
+    position: absolute;
+    z-index: 1;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.hills img {
+    width: 100%;
+}
+
+
+.attribution {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.65px;
+    color: var(--grayish-blue);
+    position: absolute;
+    z-index: 5;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.attribution a {
+    color: hsl(228, 70%, 59%);
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color:hsl(281, 77%, 63%);
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+}
