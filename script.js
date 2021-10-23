@@ -40,7 +40,7 @@ var x = setInterval(function() {
 
     if (distance < 0) {
         clearInterval(x);
-        document.querySelector(".launching").style.display = "none";
+        document.querySelector(".launching").innerHTML = "Assignment Launched";
         document.querySelector(".cards").style.display = "none";
       }
 
