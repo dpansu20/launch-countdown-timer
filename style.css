@@ -184,6 +184,8 @@ body {
 }
 
 .social a {
+    height: 24px;
+    width: 24px;
     margin: 0 15px;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
