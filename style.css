@@ -112,7 +112,7 @@ body {
     transform: translate(-50%, -50%);
     z-index: 10;
     text-align: center;
-    font-size: 75px;
+    font-size: 80px;
     color: var(--soft-red);
     font-weight: 700;
     -webkit-transform: translate(-50%, -50%);
