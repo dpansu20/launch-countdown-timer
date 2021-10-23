@@ -28,6 +28,7 @@ body {
 
 
 .launching {
+    width: 100%;
     position: absolute;
     top: 15%;
     left: 50%;
@@ -200,18 +201,22 @@ body {
 .hills {
     position: absolute;
     z-index: 1;
-    bottom: -5px;
-    left: 0;
-    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .hills img {
     width: 100%;
+    min-width: 1440px;
+    max-width: 100%;
+    height: 197px;
 }
 
 
 .attribution {
+    width: 100%;
     font-size: 11px;
     font-weight: 400;
     text-align: center;
@@ -239,6 +244,379 @@ body {
 
 
 
+@media only screen and (max-width: 1000px) {
+    .launching {
+        top: 13%;
+        letter-spacing: 0.30em;
+    }
+    .cards {
+        transform: translate(-50%, -70%);
+        -webkit-transform: translate(-50%, -70%);
+        -moz-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+        -o-transform: translate(-50%, -70%);
+}
+    .section {
+        margin: 0 14px;
+    }
+    .top-card {
+        height: 65px;
+        width: 140px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: radial-gradient(circle at bottom right, transparent 7px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 7px, var(--dark-desat-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+    }
+    .bottom-card {
+        height: 65px;
+        width: 140px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: radial-gradient(circle at top right, transparent 7px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 7px, var(--dark-desat-blue) 0) top left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+    }
+    .number {
+        font-size: 65px;
+    }
+    .top-cover {
+        height: 65px;
+        width: 140px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        background: radial-gradient(circle at bottom right, transparent 7px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 7px, var(--very-dark-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+    }
+    .card-back {
+        top: 11px;
+        left: 1px;
+        height: 130px;
+        width: 138px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .card-type {
+        font-size: 12px;
+        letter-spacing: 6px;
+        margin-top: 21px;
+    }
+    .social a {
+        margin: 0 14px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .launching {
+        top: 13%;
+        letter-spacing: 0.30em;
+    }
+    .cards {
+        transform: translate(-50%, -70%);
+        -webkit-transform: translate(-50%, -70%);
+        -moz-transform: translate(-50%, -70%);
+        -ms-transform: translate(-50%, -70%);
+        -o-transform: translate(-50%, -70%);
+}
+    .section {
+        margin: 0 12px;
+    }
+    .top-card {
+        height: 60px;
+        width: 125px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at bottom right, transparent 7px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 7px, var(--dark-desat-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .bottom-card {
+        height: 65px;
+        width: 125px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at top right, transparent 7px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 7px, var(--dark-desat-blue) 0) top left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .number {
+        font-size: 60px;
+    }
+    .top-cover {
+        height: 60px;
+        width: 125px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at bottom right, transparent 7px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 7px, var(--very-dark-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .card-back {
+        top: 10px;
+        left: 0.5px;
+        height: 120px;
+        width: 124px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+}
+    .card-type {
+        font-size: 11px;
+        letter-spacing: 4px;
+        margin-top: 18px;
+    }
+}
+
+
 @media only screen and (max-width: 600px) {
-    
+    .launching {
+        top: 12%;
+        letter-spacing: 0.25em;
+    }
+    .cards {
+        transform: translate(-50%, -80%);
+        -webkit-transform: translate(-50%, -80%);
+        -moz-transform: translate(-50%, -80%);
+        -ms-transform: translate(-50%, -80%);
+        -o-transform: translate(-50%, -80%);
+}
+    .section {
+        margin: 0 8px;
+    }
+    .top-card {
+        height: 55px;
+        width: 110px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at bottom right, transparent 6px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 6px, var(--dark-desat-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .bottom-card {
+        height: 55px;
+        width: 110px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at top right, transparent 6px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 6px, var(--dark-desat-blue) 0) top left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .number {
+        font-size: 55px;
+    }
+    .top-cover {
+        height: 55px;
+        width: 110px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+        background: radial-gradient(circle at bottom right, transparent 6px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 6px, var(--very-dark-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .card-back {
+        top: 9px;
+        left: 0.5px;
+        height: 110px;
+        width: 109px;
+        border-radius: 9px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+}
+    .card-type {
+        font-size: 9px;
+        letter-spacing: 4px;
+        margin-top: 16px;
+    }
+    .social a {
+        margin: 0 12px;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .launching {
+        top: 12%;
+        letter-spacing: 0.22em;
+    }
+    .cards {
+        transform: translate(-50%, -95%);
+        -webkit-transform: translate(-50%, -95%);
+        -moz-transform: translate(-50%, -95%);
+        -ms-transform: translate(-50%, -95%);
+        -o-transform: translate(-50%, -95%);
+}
+    .section {
+        margin: 0 5px;
+    }
+    .top-card {
+        height: 45px;
+        width: 92px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at bottom right, transparent 5px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 5px, var(--dark-desat-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .bottom-card {
+        height: 45px;
+        width: 92px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at top right, transparent 5px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 5px, var(--dark-desat-blue) 0) top left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .number {
+        font-size: 50px;
+    }
+    .top-cover {
+        height: 45px;
+        width: 92px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at bottom right, transparent 5px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 5px, var(--very-dark-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .card-back {
+        top: 8px;
+        left: 0.5px;
+        height: 90px;
+        width: 91px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+    .card-type {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-top: 14px;
+    }
+    .social a {
+        margin: 0 12px;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .launching {
+        top: 11%;
+        font-size: 1.35em;
+        letter-spacing: 0.22em;
+    }
+    .cards {
+        transform: translate(-50%, -100%);
+        -webkit-transform: translate(-50%, -100%);
+        -moz-transform: translate(-50%, -100%);
+        -ms-transform: translate(-50%, -100%);
+        -o-transform: translate(-50%, -100%);
+}
+    .section {
+        margin: 0 5px;
+    }
+    .top-card {
+        height: 45px;
+        width: 85px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at bottom right, transparent 5px, var(--dark-desat-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 5px, var(--dark-desat-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .bottom-card {
+        height: 45px;
+        width: 85px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at top right, transparent 5px, var(--dark-desat-blue) 0) top right, radial-gradient(circle at top left, transparent 5px, var(--dark-desat-blue) 0) top left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .number {
+        font-size: 45px;
+    }
+    .top-cover {
+        height: 45px;
+        width: 85px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+        background: radial-gradient(circle at bottom right, transparent 5px, var(--very-dark-blue) 0) bottom right, radial-gradient(circle at bottom left, transparent 5px, var(--very-dark-blue) 0) bottom left;
+        background-size: 60% 100%;
+        background-repeat: no-repeat;
+}
+    .card-back {
+        top: 8px;
+        left: 0.5px;
+        height: 90px;
+        width: 84px;
+        border-radius: 8px;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        -ms-border-radius: 8px;
+        -o-border-radius: 8px;
+}
+    .card-type {
+        font-size: 10px;
+        letter-spacing: 3px;
+        margin-top: 14px;
+    }
+    .social a {
+        margin: 0 10px;
+    }
 }
