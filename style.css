@@ -40,6 +40,10 @@ body {
     color: #f4f2f5;
     text-align: center;
     text-transform: uppercase;
+    
+}
+
+.launching h1{
     font-weight: 700;
     font-size: 1.4em;
     letter-spacing: 0.34em;
